@@ -92,7 +92,14 @@ public class B {
 
         System.out.println(total);
             
-        
+        // Salary Bonus Program
+        int salary = 30000;
+        int bonus = 10;
+
+        int bonusAmt = salary/bonus;
+        int finalSalary = salary + bonusAmt;
+
+        System.out.println("Final Salary after bonus : " + finalSalary);
     
     
     
