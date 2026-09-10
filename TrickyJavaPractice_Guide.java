@@ -1,4 +1,4 @@
-/*
+*
  * TRICKY JAVA PRACTICE GUIDE
  *
  * Topics:
@@ -9,7 +9,6 @@
  * - Operator Precedence
  * - Integer vs Decimal Division
  * - Modulus (%)
- *
  * IMPORTANT:
  * Do NOT use:
  * - Scanner
