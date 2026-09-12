@@ -183,7 +183,41 @@ public class BasicPractice {
         //
         // Expected Output:
         // Total Bill = 1900
+
+        //Answer=1
         
+        int a = -10;
+        if(a > -10){
+            System.out.println("positive");
+        }else if (a > 0){
+            System.out.println("negative");
+        }else {
+            System.out.println("zero");
+        }
 
     }
+
 }
+
+// Answer 2
+
+  //  int b = 17;
+
+   //  if(b % 2 == 0){
+       // System.out.println("even")
+   // }else {
+    //    System.out.println("odd");
+  //  }
+
+    //Ans 3
+
+   // int A = 20;
+    //int B = 40;
+    //if(A > B){
+      //  System.out.println("A is grater");
+    //}else if (B > A){
+      //  System.out.println("B is grater");
+    //}else{
+      //  System.out.println("both are equal");
+    //}
+    

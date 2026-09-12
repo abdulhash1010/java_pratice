@@ -13,9 +13,8 @@ public class ifelsepractice {
         
         System.out.println(8 <= 5);
 
-
-
         // Calculator program
+          
         int a = 9;
         char operator = '*';
         int b = 8;
