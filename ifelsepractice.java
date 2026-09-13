@@ -41,5 +41,5 @@ public class ifelsepractice {
     // a >= b - a greator than or equal to b
     // a <= b - a less than or equal to b
     // a == b - a is equal to b
-    
+    // marks >= n && marks <= n2   average marks
 }

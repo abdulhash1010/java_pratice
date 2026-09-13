@@ -187,37 +187,132 @@ public class BasicPractice {
         //Answer=1
         
         int a = -10;
-        if(a > -10){
-            System.out.println("positive");
-        }else if (a > 0){
-            System.out.println("negative");
+        if(a > 0){
+            System.out.println("ans:" + "positive");
+        }else if (a < 0){
+            System.out.println("ans:" + "negative");
         }else {
-            System.out.println("zero");
+            System.out.println("ans:" + "zero");
         }
 
-    }
+    
 
-}
+
 
 // Answer 2
 
-  //  int b = 17;
+    int b = 17;
 
-   //  if(b % 2 == 0){
-       // System.out.println("even")
-   // }else {
-    //    System.out.println("odd");
-  //  }
+     if(b % 2 == 0){
+        System.out.println("Ans:" + "Even");
+    }else {
+        System.out.println("Ans:" +"Odd");
+    }
 
     //Ans 3
 
-   // int A = 20;
-    //int B = 40;
-    //if(A > B){
-      //  System.out.println("A is grater");
-    //}else if (B > A){
-      //  System.out.println("B is grater");
-    //}else{
-      //  System.out.println("both are equal");
-    //}
+    int A = 20;
+    int B = 40;
+    if(A > B){
+        System.out.println("A is greater");
+    }else if (B > A){
+        System.out.println("B is greater");
+    }else{
+        System.out.println("both are equal");
     
+    System.out.println("test");
+    }
+
+     //ans 4
+
+   int Age = 21;
+   if(Age >= 18){
+        System.out.println("person:" + "Eligible");
+   }else{
+    System.out.println("person:" + "not Eligible");
+   }
+
+   //ans 5
+
+   int marks = 82;
+   if (marks >= 90){
+    System.out.println("student:" + "Excellent");
+   }else if (marks >= 75 && marks <= 89){
+    System.out.println("student:" +"very good");
+   }else if (marks >= 60 && marks <= 74){
+    System.out.println("student:" +"good");
+   }else if (marks >= 40 && marks <= 59){
+    System.out.println("student:" +"pass");
+   }else {
+    System.out.println("student:" +"fail");
+   }
+
+   //ans 6
+
+   int g = 35;
+   int h = 20;
+   int m = 50;
+   if (m > h && m > g){
+    System.out.println("m:" + "large");
+   }else if (h>g && h>m){
+    System.out.println("h:"+ "larger");
+   }else if (g>h && g>m){
+    System.out.println("g:" + "larger");
+   }
+    
+   //ans 7
+
+   double temp = 32.5d;
+   if (temp <= 10){
+    System.out.println("TEMP:" + "cold");
+   }else if (10 <= temp && temp >= 24){
+    System.out.println("TEMP:" + "cool");
+   }else if (25 <= temp && temp <= 34){
+    System.out.println("TEMP:" + "warm");
+   }else{
+    System.out.println("TEMP:" + "hot");
+   } 
+
+   //ANS 8
+
+   double n = 20;
+   char operator = '*';
+   double y = 5;
+   if (operator == '+'){
+    System.out.println("ans:"  + (n + y));
+   }else if (operator == '-'){
+    System.out.println("ans:" + (n - y));
+   }else if (operator == '*'){
+    System.out.println("ans:" + (n * y));
+   }else if(operator == '/'){
+    System.out.println("ans:" + (n / y));
+   }
+ 
+   //ans 9
+
+   String username = "admin";
+   int password = 1234;
+   if(username=="admin" && password == 1234){
+    System.out.println("login Successful");
+   }else {
+    System.out.println("invalid");
+   }
+
+  // ans 10
+
+  int unit = 250;
+  if(unit <= 100){
+    System.out.println( unit * 5);
+  }else if (unit <= 200){
+    System.out.println( unit * 7);
+  }else {
+    
+    System.out.println( ("totalbill:") + ((100 * 5) + (100 * 7) + ((unit - 200) * 10)));
+  }
+    
+    }
+}
+
+
+
+
