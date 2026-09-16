@@ -1,0 +1,466 @@
+JAVA NOTES — ARITHMETIC & ASSIGNMENT OPERATORS
+====================================================
+
+1. ARITHMETIC OPERATORS
+-----------------------
+
+Arithmetic operators are used to perform mathematical calculations on values or variables.
+
+Operator    Name                    Example       Result
++           Addition                10 + 5        15
+-           Subtraction             10 - 5        5
+*           Multiplication          10 * 5        50
+/           Division                10 / 5        2
+%           Modulus / Remainder     10 % 3        1
+
+
+Example:
+
+int a = 39;
+int b = 50;
+
+int sum = a + b;
+int sub = a - b;
+int mul = a * b;
+int div = a / b;
+int mod = a % b;
+
+
+Results:
+
+sum = 89
+sub = -11
+mul = 1950
+div = 0
+mod = 39
+
+
+2. INTEGER DIVISION
+-------------------
+
+When BOTH operands are integers, Java performs integer division.
+
+Example:
+
+int a = 39;
+int b = 50;
+
+System.out.println(a / b);
+
+Output:
+
+0
+
+Mathematically:
+
+39 / 50 = 0.78
+
+But because both values are int, Java removes the decimal part:
+
+0.78 -> 0
+
+If you want the decimal result:
+
+double result = (double) a / b;
+
+Result:
+
+0.78
+
+
+3. MODULUS %
+------------
+
+The % operator gives the REMAINDER after division.
+
+Example:
+
+int result = 17 % 5;
+
+17 / 5 = 3 remainder 2
+
+Therefore:
+
+17 % 5 = 2
+
+
+Another example:
+
+39 % 50 = 39
+
+Because 50 cannot completely fit into 39.
+
+
+COMMON USE OF MODULUS:
+
+Checking whether a number is even or odd:
+
+int n = 10;
+
+if (n % 2 == 0) {
+    System.out.println("Even");
+}
+
+Why?
+
+10 % 2 = 0
+
+If the remainder is 0, the number is divisible by 2.
+
+
+4. ARITHMETIC WITH FLOAT
+------------------------
+
+The same arithmetic operators work with floating-point numbers.
+
+Example:
+
+float f = 15.55f;
+float g = 79.99f;
+
+float add = f + g;
+float subt = f - g;
+float mult = f * g;
+float dive = f / g;
+float modu = f % g;
+
+
+5. WHY USE 'f' WITH FLOAT?
+--------------------------
+
+In Java, decimal numbers are treated as double by default.
+
+15.55     -> double
+15.55f    -> float
+
+Therefore:
+
+float x = 15.55f;     // Valid
+
+But:
+
+float x = 15.55;      // ERROR
+
+The 'f' tells Java that the decimal literal should be treated as a float.
+
+
+6. MODULUS WITH FLOAT
+---------------------
+
+Java also allows % with floating-point values.
+
+Example:
+
+float a = 15.55f;
+float b = 79.99f;
+
+float result = a % b;
+
+Since 15.55 is smaller than 79.99, the remainder is approximately:
+
+15.55
+
+
+% can be used with:
+
+int
+long
+float
+double
+
+
+7. ASSIGNMENT OPERATOR =
+------------------------
+
+The = operator assigns a value to a variable.
+
+Example:
+
+int age = 21;
+
+Think of it as:
+
+variable <- value
+
+The statement:
+
+int age = 21;
+
+means:
+
+Store 21 inside the variable age.
+
+
+8. COMPOUND ASSIGNMENT OPERATORS
+--------------------------------
+
+Java provides shortcuts for performing an operation and assigning the result back to the same variable.
+
+Instead of:
+
+A2 = A2 + 50;
+
+You can write:
+
+A2 += 50;
+
+Both mean the same thing.
+
+
+Common compound assignment operators:
+
++=    x = x + value
+-=    x = x - value
+*=    x = x * value
+/=    x = x / value
+%=    x = x % value
+
+
+9. += OPERATOR
+--------------
+
+Example:
+
+int A2 = 50;
+
+A2 += 50;
+
+Equivalent to:
+
+A2 = A2 + 50;
+
+Step-by-step:
+
+A2 = 50
+A2 = 50 + 50
+A2 = 100
+
+Output:
+
+100
+
+
+10. -= OPERATOR
+---------------
+
+Example:
+
+float f2 = 34.55f;
+
+f2 -= 23.77f;
+
+Equivalent to:
+
+f2 = f2 - 23.77f;
+
+Calculation:
+
+34.55 - 23.77 = approximately 10.78
+
+
+IMPORTANT:
+
+Your original code had:
+
+f2 -= 23.77;
+
+This causes a type issue because 23.77 is a double by default while f2 is a float.
+
+Use:
+
+f2 -= 23.77f;
+
+or:
+
+f2 = f2 - 23.77f;
+
+
+11. *= OPERATOR
+---------------
+
+Example:
+
+double d2 = 20.778787;
+
+d2 *= 24.9898898;
+
+Equivalent to:
+
+d2 = d2 * 24.9898898;
+
+Java multiplies the current value of d2 by 24.9898898 and stores the result back into d2.
+
+
+12. /= OPERATOR
+---------------
+
+Example:
+
+long l2 = 8989898;
+
+l2 /= 767676;
+
+Equivalent to:
+
+l2 = l2 / 767676;
+
+Because l2 is a long, integer division is performed.
+
+Example:
+
+long x = 10;
+
+x /= 3;
+
+Result:
+
+3
+
+NOT:
+
+3.333333...
+
+
+13. OPERATOR SUMMARY
+--------------------
+
+ARITHMETIC OPERATORS:
+
++
+-
+*
+/
+%
+
+Used to perform calculations.
+
+
+ASSIGNMENT OPERATOR:
+
+=
+
+Used to assign a value to a variable.
+
+
+COMPOUND ASSIGNMENT OPERATORS:
+
++=
+-=
+*=
+/=
+%=
+
+Used to perform an operation and store the result back into the same variable.
+
+
+14. IMPORTANT RULES TO REMEMBER
+-------------------------------
+
+RULE 1 — INTEGER DIVISION
+
+int x = 5 / 2;
+
+Result:
+
+2
+
+Not 2.5.
+
+
+RULE 2 — DECIMAL LITERALS ARE DOUBLE BY DEFAULT
+
+double x = 10.5;     // Valid
+float y = 10.5f;     // Valid
+float z = 10.5;      // ERROR
+
+
+RULE 3 — % GIVES THE REMAINDER
+
+17 % 5
+
+Result:
+
+2
+
+
+RULE 4 — COMPOUND ASSIGNMENT MODIFIES THE EXISTING VARIABLE
+
+int x = 10;
+
+x += 5;
+
+Now:
+
+x = 15
+
+
+RULE 5 — /= WITH INTEGER TYPES PERFORMS INTEGER DIVISION
+
+int x = 10;
+
+x /= 4;
+
+Result:
+
+x = 2
+
+
+RULE 6 — PARENTHESES CAN MAKE EXPRESSIONS CLEARER
+
+These produce the same result:
+
+int sum = a + b;
+
+int sum = (a + b);
+
+Parentheses are not necessary in this simple example, but they are useful in more complicated expressions.
+
+
+15. CLEANER VARIABLE NAMING
+---------------------------
+
+Instead of:
+
+int sum = a + b;
+int sub = a - b;
+int mul = a * b;
+int div = a / b;
+int mod = a % b;
+
+You can use descriptive names:
+
+int addition = a + b;
+int subtraction = a - b;
+int multiplication = a * b;
+int division = a / b;
+int remainder = a % b;
+
+Descriptive variable names make code easier to read and understand.
+
+
+QUICK REVISION
+--------------
+
+Arithmetic:
++   Addition
+-   Subtraction
+*   Multiplication
+/   Division
+%   Remainder
+
+Assignment:
+=   Assign value
+
+Compound Assignment:
++=  Add and assign
+-=  Subtract and assign
+*=  Multiply and assign
+/=  Divide and assign
+%=  Remainder and assign
+
+Remember:
+- int / int -> integer division
+- Decimal literals are double by default
+- Use 'f' for float literals
+- % gives the remainder
+- Compound operators update the existing variable
