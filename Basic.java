@@ -36,6 +36,57 @@ public class Basic {
         int avg = (sci + mat + eng) / 3;
 
     System.out.println(avg);
+
+
+    // updating a variable
+
+    int x = 80;
+    x = 10;
+
+    System.out.println(x);
+
+    //+= add & assign
+
+    int g = 40;
+    g+=40;
+    System.out.println(g);
+
+    int v = 80;
+    v-=50;
+    System.out.println(v);
+
+    int n = 20;
+    n*= 5;
+    System.out.println(n);
+
+    int m = 90;
+    m/=30;
+    System.out.println(m);
+
+
+    //pre & post assign operater
+
+    int f = 40;
+    int s = ++f;
+    System.out.println(f);
+    System.out.println(s);
+
+    int d = 89;
+    int j = d++;
+    System.out.println(d);
+    System.out.println(j);
+
+    int k = 78;
+    int u = --k;
+    System.out.println(k);
+    System.out.println(u);
+
+    int e = 90;
+    int r = e--;
+    System.out.println(e);
+    System.out.println(r);
+
+   
     } 
     
 }
