@@ -20,6 +20,6 @@ class takinginput{
         System.out.println(("the mul of these numbers:") + (mul));
         System.out.println(("the div of these numbers:") + (div));
         Sc.close();
+
     }
-    
-} 
+}
