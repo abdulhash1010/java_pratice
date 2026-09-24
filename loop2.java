@@ -1,21 +1,21 @@
 //for loop
 
- public class loop2 {
-     public static void main(String[]args){
-         for(int i= 1; i<=10; i++){
-             System.out.println(i);
-         }
+//  public class loop2 {
+//      public static void main(String[]args){
+//          for(int i= 1; i<=10; i++){
+//              System.out.println(i);
+//          }
     
     
 
 
-// //while loop
+// // //while loop
 
-             int e= 1;
-             while(e<=10){
-              System.out.println(e);
-              e++;
-             }
+//              int e= 1;
+//              while(e<=10){
+//               System.out.println(e);
+//               e++;
+//              }
 
         
 
@@ -24,7 +24,8 @@
 
 // ques 1:- 1 to 10 even no. pprint karo ?
   
-
+public class loop2 {
+     public static void main(String[]args){
         for(int a =0; a <=10; a=a+2){
 
             System.out.println(a);
