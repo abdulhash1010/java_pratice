@@ -1,0 +1,31 @@
+// Q1. Simple Calculator
+// Take two integers as input and print their sum,
+// difference, product, and integer division.
+
+
+// Q2. Even or Odd
+// Take an integer as input and check whether
+// it is even or odd using if-else.
+
+
+// Q3. Greatest of Three Numbers
+// Take three integers as input and print
+// the greatest number using if-else.
+
+
+// Q4. Exam Result
+// Take marks (0-100) as input and print the grade:
+// 90-100: Grade A
+// 75-89: Grade B
+// 60-74: Grade C
+// 40-59: Grade D
+// Below 40: Fail
+// Outside 0-100: Invalid marks
+
+
+// Q5. ATM Withdrawal
+// Take account balance and withdrawal amount as input.
+// Check if the withdrawal amount is greater than zero
+// and does not exceed the balance.
+// If valid, print the remaining balance.
+// Otherwise, print an appropriate error message.
