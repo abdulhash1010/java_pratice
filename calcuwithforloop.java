@@ -1,11 +1,17 @@
  import java.util.Scanner;
-     class calculater{
+     class calcuwithforloop{
          public static void main(String[]args){
             
              Scanner Sc = new Scanner(System.in);
              for(int i = 1; i <=10; i++){
+                
              System.out.println("enter no. 1");
              int a = Sc.nextInt();
+             if(a == 0){
+                System.out.println("calcu stop");
+             
+             break;
+             }
              System.out.println("enter operater");
              char op = Sc.next().charAt(0);
              System.out.println("enter no. 2");
