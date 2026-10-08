@@ -70,5 +70,9 @@ class string {
 
         String letter2 = "dear harry,\n \tthis java course is nice .\n  thanks";
         System.out.println(letter2);
+
+        String letter3 = "dear name thanks a lot";
+
+        System.out.println(letter3.charAt(3));
     }
 }
