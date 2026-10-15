@@ -1,6 +1,6 @@
 public class doloop {
     public static void main(String[] args) {
-         int b = 0;
+         int b = 1;
          do{
             System.out.println(b);
             b++;
